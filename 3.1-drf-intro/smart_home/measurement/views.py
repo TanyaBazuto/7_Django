@@ -1,7 +1,7 @@
 from rest_framework.response import Response
 from measurement.models import Sensor, Measurement
 from measurement.serializers import SensorDetailSerializer, MeasurementSerializer, SensorSerializer
-from rest_framework.generics import ListCreateAPIView, RetrieveAPIView, RetrieveUpdateAPIView
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateAPIView
 
 
 # Получить список датчиков, создать датчик
