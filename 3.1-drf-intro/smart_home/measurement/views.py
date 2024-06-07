@@ -14,7 +14,7 @@ class SensorUpdateView(RetrieveUpdateAPIView):
     serializer_class = SensorDetailSerializer
 
 
-class MeasurementView(ListCreateAPIView):
+class MeasurementView(CreateAPIView):
     queryset = Measurement.objects.all()
     serializer_class = MeasurementSerializer
     def post(self, request):
